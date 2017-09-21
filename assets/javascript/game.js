@@ -24,23 +24,18 @@ var moves = 10;
 
       
       document.getElementById("userGuessElement").innerHTML = userGuess;
-      //document.getElementById("computerGuessElement").innerHTML = computerGuess;
-   
-      //alert(userGuess);
-      //alert(computerGuess);    
       	      
 
       if (userGuess === computerGuess){
       	wins ++
-        moves --
-      	alert("You Got it Right");
+      	alert("You Got It");
             	
       }
       
       else {
       	losses ++
       	moves --
-            alert("try again");
+            alert("Sorry Try Again");
 	    }
       
        
@@ -48,16 +43,15 @@ var moves = 10;
        document.getElementById("lossesElement").innerHTML = losses; 
        document.getElementById("movesElement").innerHTML = moves;     
        
-      }
+  }
+  
       else {
-      console.log("Game Over");
+      alert("Game Over, Reload to Start Again");
       }
   };    
       
 
-      //document.getElementById("userGuessElement").innerHTML = userGuess;
-	  //document.getElementById("computerGuessElement").innerHTML = computerGuess;
-	 
+      
     
 
 
