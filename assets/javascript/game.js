@@ -17,13 +17,16 @@ var moves = 10;
   if (moves > 0) {
       // User key pressed
       var userGuess = event.key;
+      userGuess = userGuess.toLowerCase();
+
+  //if (userGuess === compLetter){
 
 
       // Computers Letter
       var computerGuess = compLetter[Math.floor(Math.random() * compLetter.length)];
 
       
-      document.getElementById("userGuessElement").innerHTML = userGuess;
+      document.getElementById("userGuessElement").innerHTML += userGuess;
       	      
 
       if (userGuess === computerGuess){
@@ -48,6 +51,7 @@ var moves = 10;
       else {
       alert("Game Over, Reload to Start Again");
       }
+   //}
   };    
       
 
